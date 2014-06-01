@@ -128,7 +128,7 @@ textarea {
     display: none;
    }
 
-   #menu-button-exit, #location-panel-button-exit{
+   #menu-button-exit, #location-panel-button-exit, #checkin-button{
     /* Position */
     position: absolute;
     float: right;
@@ -147,6 +147,14 @@ textarea {
 
     /* Cursor */
     cursor: pointer;
+   }
+
+   #checkin-button-wrapper{
+    position: relative;
+    padding-right: 12%;
+   }
+
+   #checkin-button:before{
    }
 
    #menu ul, #location-panel ul, #location-name{
