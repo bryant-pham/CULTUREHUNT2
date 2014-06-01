@@ -81,6 +81,47 @@ fieldset {
 textarea {
     resize: vertical;
 }
+    
+  /* About
+   ========================================================================== */
+   #welcome-to{
+    color: #333;
+   }
+   #app-title{
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+    font-size: 2.5em;
+    text-align: center;
+    color: #f5f5f5;
+    text-shadow:0 0px 10px rgba(30,30,30,0.3);
+   }
+   #about-panel-wrapper{
+    /* Position */
+    position: absolute;
+
+    /* List Style */
+
+    /* Color */
+    color: rgb(92,182,242); /* cornflowerblue */
+    /*  color: #382626; black */
+
+    /* Font */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+
+    /* Scroll */
+    overflow-y: scroll;
+   }
+
+    #about-panel-wrapper p, #about-panel-wrapper h3, #about-panel-wrapper h2 {
+        padding: 5%;
+    }
+
+    #about-panel-wrapper p, #about-panel-wrapper h3{
+            /* Color */
+        color: #333;
+    }
   /* Menu
    ========================================================================== */
 
@@ -113,7 +154,7 @@ textarea {
     cursor: pointer;
    }
 
-   #menu{
+   #menu, #nearby-list-panel, #about-panel-wrapper{
     /* Position */
     position: absolute;
     height: 100%;
@@ -128,7 +169,7 @@ textarea {
     display: none;
    }
 
-   #menu-button-exit, #location-panel-button-exit, #checkin-button, #leaderboard-exit-button{
+   #menu-button-exit, #location-panel-button-exit, #checkin-button, #leaderboard-exit-button, #nearby-list-exit-button, #about-exit-button{
     /* Position */
     position: absolute;
     float: right;
@@ -147,6 +188,14 @@ textarea {
 
     /* Cursor */
     cursor: pointer;
+
+    /* Disable Select */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
    }
 
    #checkin-button{
@@ -154,7 +203,7 @@ textarea {
     position: absolute;
     float: right;
     margin: 3%;
-    margin-right:20%;
+    margin-right:25%;
     right:0;
 
     /* Font */
@@ -182,10 +231,10 @@ textarea {
         font-size: 5em;  
     }  
 
-    #menu ul, #location-panel ul, #location-name{
+    #menu ul, #location-panel ul, #location-name, #nearby-list {
         list-style: none;
     }
-   #menu ul, #location-panel ul, #location-name, #leaderboard-panel ul{
+   #menu ul, #location-panel ul, #location-name, #leaderboard-panel ul, #nearby-list {
     /* List Style */
     padding-left: 0;
 
@@ -245,9 +294,10 @@ textarea {
         display: table;
     }
 
-    #location-name, #location-address, #location-hours{
+    #location-name, #location-address, #location-hours, #location-description{
+        display: block;
         padding: 5%;
-        padding-top: 10%;
+        padding-top: 7%;
     }
     #location-panel ul{
         color: #382626; 
@@ -256,32 +306,36 @@ textarea {
     #location-hours ul{
         margin-top: 10%;
     }
-
+    .section-header{
+        font-weight:bold;
+    }
 
   /* Leaderboard
    ========================================================================== */
    #leaderboard-panel-wrapper{
-        z-index: 5;
-        margin:0;
-        padding: 0;
-        position: absolute;
-        display: none;
-        width: 30%;
-        height: 100%;
-        right: 0;
-        top:0;
-        bottom:0;
-        overflow-x:hidden;  
-        background-color: rgb(230,223,206); /* gainsboro */
+        
+    /* Position */
+    position: absolute;
+    height: 100%;
+    width: 40%;   
+    right:0;
+    z-index: 5;
 
-       
+    /* Color */
+    background-color: rgb(230,223,206); /* gainsboro */
+
+    /* Display */
+    display: none;
+
+    overflow-y: scroll;
     }
 
     #leaderboard-panel ul{
+        list-style: none;
         padding-top: 10%;
     }
 
-    #leaderboard-panel li:not(:first-child){
+    #leaderboard-panel li:not(:first-child), #nearby-list li:not(:first-child){
     /* Border */
     border-top: 1px solid #382626; 
    }
@@ -319,27 +373,49 @@ textarea {
         display: table;
     }
 
+
+  /* Nearby-list
+   ========================================================================== */
+   #nearby-list{
+    /* Color */
+        background-color: rgb(230,223,206); /* gainsboro */
+        padding: 5%;
+        font-size: 2em;
+   }
+   #nearby-list li{
+    padding: 0.5% 0;
+   }
+   #nearby-list li ul li{
+    color: rgba(02,92,152,0.8); /* cornflowerblue */
+    border: 0px none !important;
+    list-style: none;
+    font-size: 0.7em;
+    padding:0;
+
+   }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 
 @media all and (min-width: 1000px){
-    #menu{
-        position: fixed;
+    #menu, #leaderboard-panel-wrapper, #about-panel-wrapper{
         right: 0;
-        width: 30%;
+        width: 40%;
     }
     
 }
 @media all and (max-width: 1000px) and ( min-width: 600px){
-    #menu{
-        position: fixed;
+    #menu, #leaderboard-panel-wrapper, #about-panel-wrapper{
         right: 0;
         width: 50%;
     }
 }
 @media (max-width: 600px){
+    #leaderboard-panel-wrapper, #about-panel-wrapper{
+        right: 0;
+        width: 100%;
+    }
     #menu li{
         padding: 0;
     }
