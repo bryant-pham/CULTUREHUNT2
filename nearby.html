@@ -1,2 +1,28 @@
 <html>
+<head>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/map.js"></script>
+	<script>
+	var bodyText = "";
+    $(document).ready(function() {
+        $.getJSON('/assets/db/locations.json', function(json) {
+            for(var i = 0; i < json.length; i++) {
+                var obj = json[i];
+                bodyText = bodyText + "<ul><li>" + obj.locationname + "</li>"
+                	+ "<li>" + obj.address + "</li>"
+                	+ "<li>Category:" + obj.category + "</li></ul>";
+                //setLocalMarkers(obj.locationname, obj.latitude, obj.longitude)
+                //bodyText = bodyText + returnDistance(obj.latitude, obj.longitude) + "</ul>";
+            }
+        ;
+        document.write(bodyText);
+        });
+
+    });
+    </script>
+</head>
+<body>
+	Thi works
+</body>
 </html>
