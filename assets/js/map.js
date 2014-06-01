@@ -135,6 +135,7 @@
                     $('#location-name').text(json[i].locationname);
                     $('#location-address').text(json[i].address);
                     $('#location-hours').text(json[i].hours);
+                    $('#location-description').text(json[i]["description"]);
                     var locLat = json[i].latitude;
                     var locLong = json[i].longitude;
                     passLatLong(locLat, locLong);

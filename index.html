@@ -31,6 +31,8 @@
     }
 
     $(document).ready(function() {
+
+        // Leaderboard
         $.getJSON('/assets/db/users.json', function(json) {
             for(var i = 0; i < json.length; i++) {
                 var obj = json[i];
@@ -41,6 +43,7 @@
             }
         });
 
+        // Nearby List
         $.getJSON('/assets/db/locations.json', function(json) {
                 for(var i = 0; i < json.length; i++) {
                     var obj = json[i];
@@ -49,6 +52,7 @@
                         + "<li>Category:" + obj.category + "</li></ul></li>";
                 };
             });
+
 
     });
     </script>
