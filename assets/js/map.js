@@ -90,16 +90,19 @@
       addMarkerListener(markerLoc);
     }
 
+    var jsonReturned;
     function addMarkerListener(marker) {
         google.maps.event.addListener(marker, 'click', function() {
 
-
-            findTitleInJSON(marker);
-            toggleLocationPanel();
-
             //GET JSON OBJECT OF MARKER HERE
+            var location = findTitleInJSON(marker);
+
+
+    console.log(location.locationname);
             //PASS JSON OBJECT AND UPDATE DIV
-            
+            toggleLocationPanel(location);
+
+
         });
     }
 
@@ -107,11 +110,17 @@
         var locationsJSON = $.getJSON('/assets/db/locations.json', function(json) {
             for(var i = 0; i < json.length; i++) {
                 if(json[i].locationname == marker.getTitle()) {
-                    console.log('FOUND YA');
+
+                    console.log(json[i]);
+                    $('#location-name').text(json[i].locationname);
+                    $('#location-address').text(json[i].address);
+                    $('#location-hours').text(json[i].hours);
+                    
                     return json[i];
                 }
             }
         });
+        return locationsJSON;
      }
 
     function handleNoGeolocation(errorFlag) {
