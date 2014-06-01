@@ -1,5 +1,5 @@
     var map;
-    var locationsJSON = $.getJSON('db/locations.json')
+    //var locationsJSON = $.getJSON('/assets/db/locations.json')
 
     function initialize() {
       var mapOptions = {
@@ -39,6 +39,45 @@
         handleNoGeolocation(false);
       }
     }
+    
+    function checkIn(checkinLat, checkinLong)  {
+      var currentLat;
+      var currentLong;
+      //get the current position again to see if it has changed.
+      if(navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+          currentLat = pos.lat(); //lat1
+          currentLong = pos.lng(); //long1
+
+          //HAVERSINE FORMULA TO CALCULATE DISTANCE
+          var R = 6371; // Radius of the earth in km
+          var dLat = deg2rad(checkinLat-currentLat);  // deg2rad below
+          var dLon = deg2rad(checkinLong-currentLong); 
+          var a = 
+            Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(deg2rad(currentLat)) * Math.cos(deg2rad(checkinLat)) * 
+            Math.sin(dLon/2) * Math.sin(dLon/2)
+          ; 
+          var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+          var d = R * c * 1000; // Distance in meters
+
+          //Check In Validation Condition
+          if (d<=400) {
+            alert("YOU CHECKED IN MANG");
+          } else {
+            alert("You are not close enough to check in.");
+          }
+          
+        }, function() {
+          handleNoGeolocation(true);
+        });
+      } 
+      else {
+        // Browser doesn't support Geolocation
+        handleNoGeolocation(false);
+      }
+    }
 
     //creates marker using name, lats, and longs
     function setLocalMarkers(markerName, markerLat, markerLong) {
@@ -53,22 +92,27 @@
 
     function addMarkerListener(marker) {
         google.maps.event.addListener(marker, 'click', function() {
-            //console.log(marker.getTitle());
+
+
             findTitleInJSON(marker);
             toggleLocationPanel();
+
+            //GET JSON OBJECT OF MARKER HERE
+            //PASS JSON OBJECT AND UPDATE DIV
+            
         });
     }
 
     function findTitleInJSON(marker) {
-        console.log(locationsJSON[0]);
-        for(var i = 0; i < locationsJSON.length; i++) {
-            console.log(marker.getTitle());
-            var obj = locationsJSON[i];
-            
-            if(obj.locationname == marker.getTitle())
-                console.log('TRUE');
-        }
-    }
+        var locationsJSON = $.getJSON('/assets/db/locations.json', function(json) {
+            for(var i = 0; i < json.length; i++) {
+                if(json[i].locationname == marker.getTitle()) {
+                    console.log('FOUND YA');
+                    return json[i];
+                }
+            }
+        });
+     }
 
     function handleNoGeolocation(errorFlag) {
       if (errorFlag) {
