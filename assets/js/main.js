@@ -1,5 +1,5 @@
 
-function toggleLocationPanel(location) {
+function toggleLocationPanel() {
     var locationPanel = $('#location-panel-wrapper');
     if($(window).width() > 600) {
     	locationPanel.css({
@@ -24,16 +24,25 @@ function toggleLocationPanel(location) {
 $(function(){
 
 	$('#menu-button-enter').click( 
-	    function() {
+	    function(event){
 		    $("#menu").animate({width: 'toggle'}, "slow");
+  			event.preventDefault();
     });
 
 	$('#menu-button-exit').click( 
-	    function() {
+	    function(event){
 	        $('#menu').animate({width: 'toggle'}, "slow");
+  			event.preventDefault();
 	    }
 	);
 
-
+	$('#location-panel-button-exit').click(function(){
+		if($('#location-panel-wrapper').css('display') != 'none'){
+			toggleLocationPanel(location);
+		}
+		else{
+			return
+		}
+	})
 
 });

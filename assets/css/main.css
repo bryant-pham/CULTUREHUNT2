@@ -118,7 +118,7 @@ textarea {
     position: absolute;
     height: 100%;
     width: 100%;   
-    float: right;
+    right:0;
     z-index: 5;
 
     /* Color */
@@ -128,7 +128,7 @@ textarea {
     display: none;
    }
 
-   #menu-button-exit{
+   #menu-button-exit, #location-panel-button-exit{
     /* Position */
     position: absolute;
     float: right;
@@ -161,7 +161,7 @@ textarea {
     /* Font */
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 3.5em;
+    font-size: 3em;
    }
 
    #menu li:not(:first-child){
@@ -173,12 +173,13 @@ textarea {
     }
 
 
-
    /* Location Panel
    ========================================================================== */
 
     #location-panel-wrapper {
         z-index: 4;
+        margin:0;
+        padding: 0;
         position: absolute;
         display: none;
         width: 30%;
@@ -186,18 +187,22 @@ textarea {
         left: 0;
         top:0;
         bottom:0;
-        overflow-y:hidden;
+        overflow-x:hidden;  
+
 
     }
     #location-panel{
+        margin: 0;
         background-color: rgb(230,223,206); 
-        overflow:hidden;
-        padding: 5%;
         height: 100%;
         position: relative;
-        display: block;
+        display: table;
     }
 
+    #location-name, #location-address, #location-hours{
+        padding: 5%;
+        padding-top: 10%;
+    }
     #location-panel ul{
         color: #382626; 
         font-size: 1em;
@@ -205,6 +210,7 @@ textarea {
     #location-hours ul{
         margin-top: 10%;
     }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -214,26 +220,18 @@ textarea {
     #menu{
         position: fixed;
         right: 0;
-        z-index: 5;
-        margin-right: 0;
+        width: 30%;
     }
     
 }
-@media all and (max-width: 1000px, min-width: 600px){
+@media all and (max-width: 1000px) and ( min-width: 600px){
     #menu{
         position: fixed;
         right: 0;
-        z-index: 2;
-        margin-right: 0;
         width: 50%;
-    }
-    #menu-scroller{
-
     }
 }
 @media (max-width: 600px){
-   
-
     #menu li{
         padding: 0;
     }
@@ -259,72 +257,3 @@ textarea {
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
-
-

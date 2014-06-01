@@ -92,16 +92,17 @@
 
     var jsonReturned;
     function addMarkerListener(marker) {
-        google.maps.event.addListener(marker, 'click', function() {
-
+        google.maps.event.addListener(marker, 'click', function(e){
+          
             //GET JSON OBJECT OF MARKER HERE
             var location = findTitleInJSON(marker);
 
-
-    console.log(location.locationname);
-            //PASS JSON OBJECT AND UPDATE DIV
-            toggleLocationPanel(location);
-
+            if($('#location-panel-wrapper').css('display') == 'none'){
+              toggleLocationPanel(location);
+            }
+            else{
+              return
+            }
 
         });
     }
