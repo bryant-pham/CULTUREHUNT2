@@ -62,6 +62,7 @@
           var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
           var d = R * c * 1000; // Distance in meters
 
+
           //Check In Validation Condition
           if (d<=400) {
             alert("YOU CHECKED IN MANG");
@@ -77,6 +78,10 @@
         // Browser doesn't support Geolocation
         handleNoGeolocation(false);
       }
+    }
+
+    function deg2rad(deg) {
+    return deg * (Math.PI/180)
     }
 
     //creates marker using name, lats, and longs
@@ -118,7 +123,11 @@
                     $('#location-name').text(json[i].locationname);
                     $('#location-address').text(json[i].address);
                     $('#location-hours').text(json[i].hours);
-                    
+                    var locLat = json[i].latitude;
+                    var locLong = json[i].longitude;
+                    passLatLong(locLat, locLong);
+
+
                 }
             }
         });
