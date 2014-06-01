@@ -32,6 +32,21 @@
         });
     });
     </script>
+    <script>
+    function addUserToRank(person, score){
+    document.getElementById("rankings").innerHTML+="<li>"+person+"--"+score+"</li>";
+    //rankings should be the id name of the leaderboard list
+}
+
+    $(document).ready(function() {
+        $.getJSON('/assets/db/users.json', function(json) {
+            for(var i = 0; i < json.length; i++) {
+                var obj = json[i];
+                addUserToRank(obj.usename, obj.score);
+            }
+        });
+    });
+    </script>
   </head>
 <body>
 <!-- Main Home Page -->
