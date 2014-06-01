@@ -45,7 +45,8 @@
       var markerLoc = new google.maps.Marker({
             position: new google.maps.LatLng(markerLat, markerLong),
             map: map,
-            title: markerName
+            title: markerName,
+            zIndex: 10
         });
       addMarkerListener(markerLoc);
     }

@@ -1,0 +1,308 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Map Styles
+   ========================================================================== */
+
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map-canvas { height: 100%; width: 100%; position: relative;}
+
+/* ==========================================================================
+   Home Page
+   ========================================================================== */
+
+   #menu-button-wrapper{
+
+    /* Position */
+    position: absolute;
+    display: table;
+    right: 0;
+    z-index: 4;
+    margin:3%;
+
+    /* Color */
+    background-color: rgb(230,223,206); /* gainsboro */
+    color: rgb(137,89,77); /* sienna */
+
+    /* Border */
+    border: solid; 
+    border-radius: 25%;
+
+    /* Shadow */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+   }
+
+   #menu-button-enter{
+    /* Font */
+    font-size: 4em;
+
+    /* Cursor */
+    cursor: pointer;
+   }
+
+   #menu{
+    /* Position */
+    position: absolute;
+    height: 100%;
+    width: 100%;   
+    float: right;
+    z-index: 5;
+
+    /* Color */
+    background-color: rgb(230,223,206); /* gainsboro */
+
+    /* Display */
+    display: none;
+   }
+
+   #menu-button-exit{
+    /* Position */
+    position: absolute;
+    float: right;
+    margin: 3%;
+    right:0;
+
+    /* Font */
+    font-size: 4em;
+
+    /* Color */
+    color: rgb(137,89,77); /* sienna */
+
+    /* Border */
+    border: solid;
+    border-radius: 25%;
+
+    /* Cursor */
+    cursor: pointer;
+   }
+
+   #menu ul{
+    /* List Style */
+    list-style: none;
+    padding-left: 0;
+
+    /* Color */
+    color: rgb(92,182,242); /* cornflowerblue */
+    /*  color: #382626; black */
+
+    /* Font */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3.5em;
+   }
+
+   #menu li:not(:first-child){
+    border-top: 1px solid rgb(92,182,242); /* cornflowerblue */
+    border-top: 1px solid #382626; 
+   }
+
+    #menu li{
+       padding-left: 5%;
+    }
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media all and (min-width: 1000px){
+    #menu{
+        position: fixed;
+        right: 0;
+        z-index: 5;
+        margin-right: 0;
+        width: 30%;
+    }
+    
+}
+@media all and (max-width: 1000px, min-width: 600px){
+    #menu{
+        position: fixed;
+        right: 0;
+        z-index: 2;
+        margin-right: 0;
+        width: 50%;
+    }
+    #menu-scroller{
+
+    }
+}
+@media (max-width: 600px){
+   
+
+    #menu li{
+        padding: 0;
+    }
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+

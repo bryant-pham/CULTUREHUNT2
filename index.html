@@ -13,8 +13,12 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkda6GYnMttLHgyz9J4Jtg_iFQx2PpqeY&sensor=true">
     </script>
     <script src="assets/js/map.js"></script>
-    <script>
+    <!-- UI element includes, fonts, etc. -->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 
+    
+    <script>
     $(document).ready(function() {
         $.getJSON('/assets/db/locations.json', function(json) {
             for(var i = 0; i < json.length; i++) {
@@ -26,6 +30,36 @@
     </script>
   </head>
 <body>
+<!-- Main Home Page -->
+        <div id="content-homepage">
+            <div id="menu-button-wrapper">
+                <span class="icon-list" id="menu-button-enter"></span>
+            </div><!-- Menu Button -->
+
+            <div id="menu">
+                <span class="icon-cross" id="menu-button-exit"></span>
+                <div id="menu-scoller">
+                    <ul>
+                        <li>
+                            Search
+                        </li>
+                        <li>
+                            Account
+                        </li>
+                        <li>
+                            Leaderboard
+                        </li>
+                        <li>
+                            History
+                        </li>
+                        <li>
+                            List
+                        </li>
+                    </ul>
+                </div><!-- Menu scroller -->
+            </div> <!-- Menu -->
+
+        </div><!-- Content -->
 <div id="map-canvas"/>
 </body>
 </html>
