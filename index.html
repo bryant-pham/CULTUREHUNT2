@@ -40,6 +40,16 @@
                     addUserToRank(obj.usename, obj.score);
             }
         });
+
+        $.getJSON('/assets/db/locations.json', function(json) {
+                for(var i = 0; i < json.length; i++) {
+                    var obj = json[i];
+                    document.getElementById("nearby-list").innerHTML += "<li>" + obj.locationname + "<ul>"
+                        + "<li>" + obj.address + "</li>"
+                        + "<li>Category:" + obj.category + "</li></ul></li>";
+                };
+            });
+
     });
     </script>
   </head>
