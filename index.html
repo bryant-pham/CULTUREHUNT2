@@ -26,7 +26,7 @@
 </head>   
     <script>
     function addUserToRank(person, score){
-    document.getElementById("leaderboard").innerHTML += "<li>" + person + " -- " + score + "</li>";
+    document.getElementById("leaderboard").innerHTML += "<li>" + person + " -- <span id=" + person.replace(/\s+/g, '-') + ">" + score + "</span></li>";
     //rankings should be the id name of the leaderboard list
     }
 
@@ -34,7 +34,10 @@
         $.getJSON('/assets/db/users.json', function(json) {
             for(var i = 0; i < json.length; i++) {
                 var obj = json[i];
-                addUserToRank(obj.usename, obj.score);
+                if(obj.usename == 'John Johnson')
+                    addUserToRank(obj.usename, score);
+                else
+                    addUserToRank(obj.usename, obj.score);
             }
         });
     });

@@ -12,7 +12,7 @@
         navigator.geolocation.getCurrentPosition(function(position) {
           var pos = new google.maps.LatLng(position.coords.latitude,
                                            position.coords.longitude);
-          var ctx = '<center><img src="http://lorempixel.com/50/50/cats/"><br>John Johnson<br><div><span>Points: </span><span id="points">' + 22 + '</span></div></center>';
+          var ctx = '<center><img src="http://lorempixel.com/50/50/cats/"><br>John Johnson<br><div><span>Points: </span><span id="points">' + score + '</span></div></center>';
           var infowindow = new google.maps.InfoWindow({
             content: ctx
           });
