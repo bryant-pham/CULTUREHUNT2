@@ -92,8 +92,14 @@
 
     function addMarkerListener(marker) {
         google.maps.event.addListener(marker, 'click', function() {
+
+
+            findTitleInJSON(marker);
+            toggleLocationPanel();
+
             //GET JSON OBJECT OF MARKER HERE
             //PASS JSON OBJECT AND UPDATE DIV
+            
         });
     }
 

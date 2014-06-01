@@ -81,17 +81,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
-
-/* ==========================================================================
-   Map Styles
-   ========================================================================== */
-
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 100%; width: 100%; position: relative;}
-
-/* ==========================================================================
-   Home Page
+  /* Menu
    ========================================================================== */
 
    #menu-button-wrapper{
@@ -159,7 +149,7 @@ textarea {
     cursor: pointer;
    }
 
-   #menu ul{
+   #menu ul, #location-panel ul, #location-name{
     /* List Style */
     list-style: none;
     padding-left: 0;
@@ -175,12 +165,45 @@ textarea {
    }
 
    #menu li:not(:first-child){
-    border-top: 1px solid rgb(92,182,242); /* cornflowerblue */
     border-top: 1px solid #382626; 
    }
 
     #menu li{
        padding-left: 5%;
+    }
+
+
+
+   /* Location Panel
+   ========================================================================== */
+
+    #location-panel-wrapper {
+        z-index: 4;
+        position: absolute;
+        display: none;
+        width: 30%;
+        height: 100%;
+        left: 0;
+        top:0;
+        bottom:0;
+        overflow-y:hidden;
+
+    }
+    #location-panel{
+        background-color: rgb(230,223,206); 
+        overflow:hidden;
+        padding: 5%;
+        height: 100%;
+        position: relative;
+        display: block;
+    }
+
+    #location-panel ul{
+        color: #382626; 
+        font-size: 1em;
+    }
+    #location-hours ul{
+        margin-top: 10%;
     }
 /* ==========================================================================
    Media Queries
@@ -193,7 +216,6 @@ textarea {
         right: 0;
         z-index: 5;
         margin-right: 0;
-        width: 30%;
     }
     
 }

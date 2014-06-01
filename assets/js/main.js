@@ -1,4 +1,7 @@
 
+function toggleLocationPanel() {
+    $('#location-panel-wrapper').animate({width: 'toggle'}, "slow");
+}
 
 $(function(){
 	$('#menu-button-enter').click( 
@@ -9,8 +12,6 @@ $(function(){
 	$('#menu-button-exit').click( 
 	    function() {
 	        $('#menu').animate({width: 'toggle'}, "slow");
-	        $('#location-panel-wrapper').animate({width: 'toggle'}, "slow");
- 
 	    }
 	);
 
