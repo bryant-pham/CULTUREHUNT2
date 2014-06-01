@@ -1,12 +1,9 @@
     var map;
-    var placeNames = new Array("Menil Museum","Houston Technology Center", "MD Anderson");
-    var placeLat = new Array(29.737185, 29.724983, 29.654633);
-    var placeLong = new Array(-95.397685, -95.398354, -95.546101);
-    var placePoints = new Array("100", "200", "450");
+    var locationsJSON = $.getJSON('db/locations.json')
 
     function initialize() {
       var mapOptions = {
-        zoom: 18
+        zoom: 16
       };
       map = new google.maps.Map(document.getElementById('map-canvas'),
           mapOptions);
@@ -36,11 +33,6 @@
         }, function() {
           handleNoGeolocation(true);
         });
-
-        //loop through various markers using function
-        //for (var i=0; i<3; i++){
-        //  setLocalMarkers(placeNames[i], placeLat[i], placeLong[i]);
-        //}
       } 
       else {
         // Browser doesn't support Geolocation
@@ -55,6 +47,25 @@
             map: map,
             title: markerName
         });
+      addMarkerListener(markerLoc);
+    }
+
+    function addMarkerListener(marker) {
+        google.maps.event.addListener(marker, 'click', function() {
+            //console.log(marker.getTitle());
+            findTitleInJSON(marker);
+        });
+    }
+
+    function findTitleInJSON(marker) {
+        console.log(locationsJSON[0]);
+        for(var i = 0; i < locationsJSON.length; i++) {
+            console.log(marker.getTitle());
+            var obj = locationsJSON[i];
+            
+            if(obj.locationname == marker.getTitle())
+                console.log('TRUE');
+        }
     }
 
     function handleNoGeolocation(errorFlag) {
@@ -75,3 +86,4 @@
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
+
