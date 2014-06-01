@@ -1,5 +1,3 @@
-<script>
-
     var map;
     var placeNames = new Array("Menil Museum","Houston Technology Center", "MD Anderson");
     var placeLat = new Array(29.737185, 29.724983, 29.654633);
@@ -77,5 +75,3 @@
     }
 
     google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
