@@ -5,7 +5,9 @@
         "hours": "10:00 am - 6:00 pm",
         "category": "Religious Site",
         "latitude": 29.737821,
-        "longitude": -95.395742
+        "longitude": -95.395742,
+        "description": "The Rothko Chapel is a non-denominational chapel in Houston, Texas, founded by John and Dominique de Menil. The interior serves not only as a chapel, but also as a major work of modern art. On its walls are fourteen black but color hued paintings by Mark Rothko. The shape of the building, an octagon inscribed in a Greek cross, and the design of the chapel was largely influenced by the artist.",
+        "image": "http://www.rothkochapel.org/images/stories/image_obeliskfacade.jpg"
     },
     {
         "locationname": "Screwed Up Records & Tapes",
@@ -13,7 +15,9 @@
         "hours": "9:00 am - 5:00 pm",
         "category": "Music",
         "latitude": 29.613935,
-        "longitude": -95.429772
+        "longitude": -95.429772,
+        "description": "It all started with one man and his desire to slow the world down. DJ Screw, born Robert Earl Davis, Jr. (July 20, 1971 – November 16, 2000) in Smithville, Texas, is one of hip-hop’s most influential DJs, and one of the most revered and innovative DJs known internationally for his pioneering style. While living in Houston in the late 1980s, he experimented with mixing different rap songs together and slowing down the tempo. DJ Screw released several successful albums throughout the 1990s, but he died in November 2000. His method of slowing or “screwing down” the tempo earned Davis the nickname “DJ Screw.” - See more at: http://screweduprecords.com/about#sthash.6o9JyqUM.dpuf",
+        "image": "http://screweduprecords.com/wp-content/uploads/2010/10/store1.jpg"
     },
     {
         "locationname": "Texas Guandi Temple",
@@ -21,7 +25,9 @@
         "hours": "n/a",
         "category": "Religious Site",
         "latitude": 29.734553,
-        "longitude": -95.345009
+        "longitude": -95.345009,
+        "description": "Local Buddhist temple here in Houston",
+        "image": "https://lh5.googleusercontent.com/-S8UKfzPgdJg/U1atQI5rtfI/AAAAAAAAEnA/WcDhuUyfnRA/w445-h593-no/fsqr+texas+guandi+temple.jpg"
     },
     {
         "locationname": "Shri Swaminarayan Mandir",
@@ -29,7 +35,9 @@
         "hours": "7:30 am - 8:45 pm",
         "category": "Religious Site",
         "latitude": 29.6073,
-        "longitude": -95.578918
+        "longitude": -95.578918,
+        "description": "BAPS Shri Swaminarayan Mandir in Houston is the first traditional Hindu Mandir of its kind in North America. You may experience hours of discovery and enjoyment at the Mandir. It is a masterpiece of intricate design and workmanship, replete with its 5 towering white pinnacles, 12 smooth domes and glittering 136 marble pillars. Over 33,000 pieces of Italian marble and Turkish limestone were hand-carved by skilled craftsmen and assembled by volunteers in just 16 months. Ancient Indian arts, traditions and philosophy have been encompassed in this house of devotion and worship that is a testimony to human commitment.",
+        "image": "http://s3-media3.ak.yelpcdn.com/bphoto/8fl3jwiN6mqe-HQ5ctcuaA/l.jpg"
     },
     {
         "locationname": "Sri Meenakshi Devasthanam",
@@ -37,7 +45,9 @@
         "hours": "8:30 am - 8:30 pm",
         "category": "Religious Site",
         "latitude": 29.522744,
-        "longitude": -95.297627
+        "longitude": -95.297627,
+        "description": "Sri Meenakshi Temple located in Pearland, TX, a suburb of Houston, prevails as the third Hindu temple built in the United States since the 1970s, the peak of the Hindu immigrant settlement in the United States of America. This temple is dedicated to Goddess Meenakshi, the only temple for the Goddess off the shores of India. However, in keeping with the spirit of Hindu civilization, viz., \"Unity in Diversity\" with so many religious paths, gods, sects and yet a single substratum \"Brahman\" (the single Godhead) activating this diversity, the temple is also dedicated to Lord Sri Sundareswara, or Lord Siva of the Saivite tradition.",
+        "image": "http://s3-media3.ak.yelpcdn.com/bphoto/I9SIo0HUDWkiTGEudNUx2g/l.jpg"
     },
     {
         "locationname": "Notsuoh",
@@ -45,7 +55,9 @@
         "hours": "6:00 pm - 2:00 am",
         "category": "Music",
         "latitude": 29.761861,
-        "longitude": -95.361458
+        "longitude": -95.361458,
+        "description": "In the world of all things cool, not much in Houston can top notsuoH’s quirky, oddball scene. This little hole in the wall bar is filled with a world of wonder and amusement. Some of the most peculiar and interesting Houstonians frequent this place: pretty and young, older and intense, shy and awkward, notsuoH’s has a diverse crowd to say the least. Filled to the brim with art, music, old friends, arresting conversation, riveting chess games, rarities, and oddities, it is a wonder emporium.",
+        "image": "http://static.squarespace.com/static/5215681be4b0734032a2bdb6/t/5217ced3e4b09bd519db162d/1377291987700/264078_10150235417540818_7252412_n.jpg?format=750w"
     },
     {
         "locationname": "Raindrop Turkish House",
@@ -53,7 +65,9 @@
         "hours": "n/a",
         "category": "Cultural Site",
         "latitude": 29.654633,
-        "longitude": -95.546101
+        "longitude": -95.546101,
+        "description": "Raindrop organizes every year its traditional Turkic Cultures and Children’s Festival where the kaleidoscope of varying people from Turkic World is showcased. Representative bodies and communities from Azerbaijan, Bosnia, Turkey, Turkmenistan, Kazakhstan, The Kyrgyz Republic, Uzbekistan and more celebrate the rich mosaic of variant cultures and heritages with the help of both local and international sponsors.",
+        "image": "http://www.raindropturkishhouse.org/images/stories/_branches/austin/IMG_2492.JPG"
     },
     {
         "locationname": "India House Houston",
@@ -61,7 +75,9 @@
         "hours": "8:00 am - 4:00 pm",
         "category": "Cultural Site",
         "latitude": 29.656585,
-        "longitude": -95.532987
+        "longitude": -95.532987,
+        "description": "A facility to serve Indo-Americans and those that share their values.",
+        "image": "http://www.indiahouseinc.org/_/rsrc/1312229073592/home/%C2%A9UPI-1124342.JPG?height=212&width=320"
     },
     {
         "locationname": "Adickes Sculpturworx Studio",
@@ -69,7 +85,9 @@
         "hours": "n/a",
         "category": "Arts",
         "latitude": 29.773386,
-        "longitude": -95.384609
+        "longitude": -95.384609,
+        "description": "The workshop of David Adickes, a sculptor known for his large statues.",
+        "image": "http://s3-media2.ak.yelpcdn.com/bphoto/fWz4UMmF42W8mSPDgxB0Lg/l.jpg"
     },
     {
         "locationname": "Houston Zen Center",
@@ -77,7 +95,9 @@
         "hours": "n/a",
         "category": "Religious Site",
         "latitude": 29.800366,
-        "longitude": -95.398354
+        "longitude": -95.398354,
+        "description": "A center dedicated to the practice of meditation and Zen.",
+        "image": "http://www.houstonzen.org/images_pres/building420x236.jpg"
     },
     {
         "locationname": "The Jung Center",
@@ -85,7 +105,9 @@
         "hours": "9:00 am - 5:00 am",
         "category": "Religious Site",
         "latitude": 29.726718,
-        "longitude": -95.391411
+        "longitude": -95.391411,
+        "description": "\"The Jung Center has served as a nonprofit resource unique to Houston—a forum for dynamic conversations on a diverse range of psychological, artistic, and spiritual topics. Our mission is to support the development of greater self-awareness, creative expression, and psychological insight—individually, in relationships, and within the community. The Jung Center provides pathways to find a deeper meaning in everyday life.\"",
+        "image": "http://junghouston.org/assets/img/home_The-Center.png"
     },
     {
         "locationname": "The Menil Collection",
@@ -93,7 +115,9 @@
         "hours": "10:00 am - 7:00 pm",
         "category": "Arts",
         "latitude": 29.737185,
-        "longitude": -95.397685
+        "longitude": -95.397685,
+        "description": "\"The Menil Collection opened to the public in June 1987 to house, exhibit, and preserve the art collection of John and Dominique de Menil. Assembled over the course of many decades by the Houston   philanthropists, the collection is recognized not only for its quality and depth but also for its distinctive presentation and eclecticism. An actively collecting institution, the Menil Collection contains diverse holdings representing many world cultures and thousands of years of human creativity, from prehistoric times to the present.\"",
+        "image": "https://www.menil.org/images/1103-0516-edit%20copy.jpg"
     },
     {
         "locationname": "Bayou Bend Collection and Gardens",
@@ -101,7 +125,9 @@
         "hours": "9:00 am - 5:00 pm",
         "category": "Arts",
         "latitude": 29.760527,
-        "longitude": -95.42178
+        "longitude": -95.42178,
+        "description": "\"Bayou Bend is the MFAH house museum for American decorative arts and paintings. Displayed in the former home of Houston civic leader and philanthropist Ima Hogg (1882–1975), the collection is one of the finest showcases of American furnishings, silver, ceramics, and paintings in the world. The house is situated on 14 acres of organically maintained gardens in Houston's historic River Oaks neighborhood.\"",
+        "image": "http://www.mfah.org/site_media/cache/6d/be/6dbe0cbd3ca0ac0aea9a3d5399cf91e8.jpg"
     },
     {
         "locationname": "Houston Holocaust Museum",
@@ -109,7 +135,9 @@
         "hours": "12:00 pm - 5:00 pm",
         "category": "Cultural Site",
         "latitude": 29.724983,
-        "longitude": -95.385663
+        "longitude": -95.385663,
+        "description": "\"Authentic film footage, artifacts, photographs and documents show life in pre-war Europe, the Nazi move toward the “Final Solution” and life after the Holocaust.\"",
+        "image": "https://www.hmh.org/Uploads/aboutus/Building102-550w.jpg"
     },
     {
         "locationname": "Museum of Fine Arts",
@@ -117,7 +145,9 @@
         "hours": "10:00 am - 7:00 pm",
         "category": "Arts",
         "latitude": 29.725692,
-        "longitude": -95.390379
+        "longitude": -95.390379,
+        "description": "\"Located in the heart of Houston's Museum District, the MFAH is a dynamic cultural complex comprising two gallery buildings, a sculpture garden, visitors center, library, movie theater, gift shop, café, two art schools, and two house museums.\"",
+        "image": "http://www.mfah.org/site_media/cache/4d/02/4d02863b920dd55da93c365453d0a92b.jpg"
     },
     {
         "locationname": "Miller Outdoor Theater",
@@ -125,7 +155,9 @@
         "hours": "11:00 am - 11:00 pm",
         "category": "Music",
         "latitude": 29.719181,
-        "longitude": -95.388668
+        "longitude": -95.388668,
+        "description": "\"Since 1923, Miller Outdoor Theatre in Hermann Park has been Houston’s venue for free outdoor performances. This remarkable facility with its free high-quality programs is unique in the US. It is the only proscenium theatre in the country that offers an artistically excellent, culturally diverse eight month season of performances totally free of charge to the public.\"",
+        "image": "http://milleroutdoortheatre.com/themes/milleroutdoor/media/images/home/Theatre-Info.jpg"
     },
     {
         "locationname": "War'Hous Gallery",
@@ -133,15 +165,19 @@
         "hours": "n/a",
         "category": "Arts",
         "latitude": 29.731491,
-        "longitude": -95.384784
+        "longitude": -95.384784,
+        "description": "\"War’Hous Visual Studios was created by an artist for artists. Located in the heart of downtown Houston’s Museum District, War’Hous provides a venue and outlet for under exposed local talents to display their passions and dreams in any medium.\"",
+        "image": "http://www.warhous.com/images/gallery/02.jpg"
     },
     {
-        "locationname": "Houston Is mural",
+        "locationname": "\"Houston Is\" mural",
         "address": "420 Travis St. Houston, TX 77002",
         "hours": "n/a",
         "category": "Arts",
         "latitude": 29.761602,
-        "longitude": -95.362571
+        "longitude": -95.362571,
+        "description": "A mural in Market Square maded by Gonzo247.",
+        "image": "http://ww4.hdnux.com/photos/21/41/15/4592463/3/622x350.jpg"
     },
     {
         "locationname": "The Asia Society",
@@ -149,7 +185,9 @@
         "hours": "11:00 am - 6:00 pm",
         "category": "Cultural Site",
         "latitude": 29.726365,
-        "longitude": -95.384652
+        "longitude": -95.384652,
+        "description": "\"Asia Society is the leading educational organization dedicated to promoting mutual understanding and strengthening partnerships among peoples, leaders and institutions of Asia and the United States in a global context. Across the fields of arts, business, culture, education, and policy, the Society provides insight, generates ideas, and promotes collaboration to address present challenges and create a shared future.\"",
+        "image": "http://asiasociety.org/files/imagecache/centers_articles_pages/stairs2.jpg"
     },
     {
         "locationname": "Chapel of St. Basil",
@@ -157,7 +195,9 @@
         "hours": "n/a",
         "category": "Religious Site",
         "latitude": 29.738776,
-        "longitude": -95.39253
+        "longitude": -95.39253,
+        "description": "A chapel at the University of St. Thomas.",
+        "image": "http://s3-media1.ak.yelpcdn.com/bphoto/8l72t6Vw-qjEQvTCgWKP5g/l.jpg"
     },
     {
         "locationname": "Co-Cathedral of the Sacred Heart",
@@ -165,7 +205,9 @@
         "hours": "n/a",
         "category": "Religious Site",
         "latitude": 29.750111,
-        "longitude": -95.36745
+        "longitude": -95.36745,
+        "description": "\"Co-Cathedral of the Sacred Heart offers a variety of tour times and options for all manner of visitors. Whether you are a local Houstonian of another faith who enjoys architectural beauty in spiritual structures, or if you are a visiting fellow Catholic from another parish, or even if you are a regular Parishioner of Co-Cathedral of the Sacred Heart, our well-trained volunteer docent staff stands ready to offer their time and talent to bring you a tour experience that you will not soon forget.\"",
+        "image": "http://www.sacredhearthouston.org/eccbanners/easter.jpg"
     },
     {
         "locationname": "Houston Public Library at Julia Ideson Building",
@@ -173,7 +215,9 @@
         "hours": "n/a",
         "category": "Cultural Site",
         "latitude": 29.759431,
-        "longitude": -95.369953
+        "longitude": -95.369953,
+        "description": "\"The mission of the Houston Metropolitan Research Center (HMRC) is to locate, preserve, and make available to researchers the documentary evidence of Houston's history. HMRC is located in the historic Julia Ideson Building. Created in 1976, HMRC furthers its mission by providing in-depth reference services using materials including the Texas and local history book collection, archives, photographs, architectural drawings, oral histories, and maps. Librarians and Archivists are responsible for arranging, preserving, and indexing the contents of these unique collections.\"",
+        "image": "http://www.houstonlibrary.org/upload/1-310-jib-2010.jpg"
     },
     {
         "locationname": "Sam Houston Park",
@@ -181,7 +225,9 @@
         "hours": "n/a",
         "category": "Park",
         "latitude": 29.760129,
-        "longitude": -95.370571
+        "longitude": -95.370571,
+        "description": "\"The Houston Parks and Recreation Department was created by city ordinance on March 15, 1916, with two facilities, Sam Houston Park and Hermann Park. Today, the Department manages, maintains and stewards 366 developed parks and over 200 greenspaces and esplanades for the City of Houston.\"",
+        "image": "http://www.houstontx.gov/parks/ourparks/images/samhoustonparkhome.jpg"
     },
     {
         "locationname": "Fitzgerald's",
@@ -189,7 +235,9 @@
         "hours": "7:00 am - 2:00 am",
         "category": "Music",
         "latitude": 29.781814,
-        "longitude": -95.388071
+        "longitude": -95.388071,
+        "description": "\"Ask a local music lover in Houston where they saw their first show and put money on their answer being: Fitzgerald's. Since 1977 Fitzgerald's has been the go-to venue for live music in Houston when it first opened it's doors to musical greats like James Brown, Tina Turner, Steve Ray Vaughan, R.E.M., The Ramones and countless others, as well as being the place where many local bands got their first start.\"",
+        "image": "https://files.stubwire.com/events/original/0d933d460f7e4f0fa225c4c0152616ca.jpg"
     },
     {
         "locationname": "Number's Night Club",
@@ -197,7 +245,9 @@
         "hours": "n/a",
         "category": "Music",
         "latitude": 29.744746,
-        "longitude": -95.384943
+        "longitude": -95.384943,
+        "description": "\"NUMBERS has been located at 300 Westheimer Houston, TX. USA for 36 years and we're proud to be Houston's oldest and most infamous venue for live local, international and breaking alternative acts ranging from The Cure to The Black Keys, and Probably the longest running Nightclub/Concert Venue in the US.\"",
+        "image": "http://www.numbersnightclub.com/images/numbersoutside.jpg"
     },
     {
         "locationname": "House of Pies",
@@ -205,7 +255,9 @@
         "hours": "24/7",
         "category": "Food",
         "latitude": 29.737075,
-        "longitude": -95.419152
+        "longitude": -95.419152,
+        "description": "\"A slice of heaven on earth.\"",
+        "image": "http://www.houseofpies.com/hop_coffee_cup.jpg"
     },
     {
         "locationname": "Old Town Spring",
@@ -213,7 +265,9 @@
         "hours": "n/a",
         "category": "Food/Music/Art",
         "latitude": 30.07902,
-        "longitude": -95.421159
+        "longitude": -95.421159,
+        "description": "\"Old Town Spring emerged with the steady growth of merchants through the 70′s and 80′s into a favorite site of customers and visitors from all over the world and produces several popular festivals and events such as the Texas Crawfish & Music Festival held each year in April. Old Town Spring is voted one of the top attractions in Texas each year.",
+        "image": "http://oldtownspring.com/wp-content/uploads/2013/10/oldpic2-01.png"
     },
     {
         "locationname": "Houston Technology Center",
@@ -221,7 +275,9 @@
         "hours": "n/a",
         "category": "Arts",
         "latitude": 29.752067,
-        "longitude": -95.375678
+        "longitude": -95.375678,
+        "description": "\"Named by Forbes' as one of \"Ten Technology Incubators Changing the World,\" the Houston Technology Center provides education, insight, and access to capital that entrepreneurs need to move towards the path to commercialization.\"",
+        "image": "http://houstontech.org/media/cached/photos/1121/640x640/constrain/90/Houston-Technology-Center-Oct-2011-Sponsor-Appreciation-117-f8352.jpg"
     },
     {
         "locationname": "Houston Museum of African American Culture",
@@ -229,6 +285,8 @@
         "hours": "n/a",
         "category": "Arts",
         "latitude": 29.729597,
-        "longitude": -95.382338
+        "longitude": -95.382338,
+        "description": "\"HMAAC is a museum for all people. While our focus is the African American experience, our story in Texas informs and includes not only people of color, but people of all colors. As a result, the stories and exhibitions that HMAAC will bring to Texas are about the indisputable fact that while our experience is a unique one, it has been impacted by numerous races, genders and ethnicities.\"",
+        "image": "http://hmaac.org/img/HMAAC-grayed-out.png"
     }
 ]
