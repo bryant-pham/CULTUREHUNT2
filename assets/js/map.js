@@ -81,20 +81,22 @@
 
     //creates marker using name, lats, and longs
     function setLocalMarkers(markerName, markerLat, markerLong) {
-      var markerLoc = new google.maps.Marker({
+        console.log(markerLat + ' ' + markerLong);
+        var markerLoc = new google.maps.Marker({
             position: new google.maps.LatLng(markerLat, markerLong),
             map: map,
             title: markerName,
             zIndex: 10
         });
-      addMarkerListener(markerLoc);
+        //console.log('SETTING MARKERS');
+        addMarkerListener(markerLoc);
     }
 
     var jsonReturned;
     function addMarkerListener(marker) {
         google.maps.event.addListener(marker, 'click', function() {
             //GET JSON OBJECT OF MARKER HERE
-            var location = findTitleInJSON(marker);
+            var location = findTitleInJSONAndSetSidebar(marker);
             //PASS JSON OBJECT AND UPDATE DIV
             toggleLocationPanel(location);
         });
