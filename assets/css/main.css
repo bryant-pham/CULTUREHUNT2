@@ -128,7 +128,7 @@ textarea {
     display: none;
    }
 
-   #menu-button-exit, #location-panel-button-exit, #checkin-button{
+   #menu-button-exit, #location-panel-button-exit, #checkin-button, #leaderboard-exit-button{
     /* Position */
     position: absolute;
     float: right;
@@ -156,10 +156,11 @@ textarea {
 
    #checkin-button:before{
    }
-
-   #menu ul, #location-panel ul, #location-name{
-    /* List Style */
+#menu ul, #location-panel ul, #location-name{
     list-style: none;
+}
+   #menu ul, #location-panel ul, #location-name, #leaderboard-panel ul{
+    /* List Style */
     padding-left: 0;
 
     /* Color */
@@ -173,9 +174,20 @@ textarea {
    }
 
    #menu li:not(:first-child){
+    /* Border */
     border-top: 1px solid #382626; 
-   }
 
+    /* Cursor */
+    cursor: pointer;
+   }
+   /* Disable First and Second Child */
+    #menu li:first-child, #menu li:nth-child(2) {
+    /* Color */
+    color: rgba(52,142,202,0.5); /* cornflowerblue */
+
+    /* Cursor */
+    cursor: default;
+    }
     #menu li{
        padding-left: 5%;
     }
@@ -190,7 +202,7 @@ textarea {
         padding: 0;
         position: absolute;
         display: none;
-        width: 30%;
+        width: 60%;
         height: 100%;
         left: 0;
         top:0;
@@ -217,6 +229,68 @@ textarea {
     }
     #location-hours ul{
         margin-top: 10%;
+    }
+
+
+  /* Leaderboard
+   ========================================================================== */
+   #leaderboard-panel-wrapper{
+        z-index: 5;
+        margin:0;
+        padding: 0;
+        position: absolute;
+        display: none;
+        width: 30%;
+        height: 100%;
+        right: 0;
+        top:0;
+        bottom:0;
+        overflow-x:hidden;  
+        background-color: rgb(230,223,206); /* gainsboro */
+
+       
+    }
+
+    #leaderboard-panel ul{
+        padding-top: 10%;
+    }
+
+    #leaderboard-panel li:not(:first-child){
+    /* Border */
+    border-top: 1px solid #382626; 
+   }
+    #leaderboard-panel li:first-child{
+    /* Color */
+    background-color: rgba(241, 196, 15,1.0); 
+    color: #333;
+    /* Layout */
+    padding: 5%;
+   }
+    #leaderboard-panel li:nth-child(2){
+    /* Color */
+    background-color: rgba(241, 196, 15,0.6); 
+    color: #333;
+
+    /* Layout */
+    padding: 3.5%;
+   }
+    #leaderboard-panel li:nth-child(3){
+    /* Color */
+    background-color: rgba(241, 196, 15,0.4); 
+    color: #333;
+
+    /* Layout */
+    padding: 2.5%;
+   }
+    #leaderboard-li{
+        cursor: pointer;
+    }
+    #leaderboard-panel{
+        margin: 0; 
+        /* Color */
+        height: 100%;
+        position: relative;
+        display: table;
     }
 
 /* ==========================================================================

@@ -32,10 +32,9 @@
         });
     });
     </script>
-<<<<<<< HEAD
     <script>
     function addUserToRank(person, score){
-    document.getElementById("rankings").innerHTML+="<li>"+person+"--"+score+"</li>";
+    document.getElementById("leaderboard").innerHTML += "<li>" + person + " -- " + score + "</li>";
     //rankings should be the id name of the leaderboard list
 }
 
@@ -49,9 +48,6 @@
     });
     </script>
   </head>
-=======
-  </head>   
->>>>>>> 16f68f8890cf606f28a0670521c3ece64ef6c428
 <body>
 <!-- Main Home Page -->
         <div id="content-homepage">
@@ -70,7 +66,7 @@
                         <li>
                             Account
                         </li>
-                        <li>
+                        <li id="leaderboard-li">
                             Leaderboard
                         </li>
                         <li>
@@ -96,7 +92,7 @@
                                 782666
                             </li>
                             <li id="location-hours">
-                                <ul>
+                                <ol>
                                     <li>Monday: 8am - 8pm</li>
                                     <li>Tuesday: 8am - 8pm</li>
                                     <li>Wednesday: 8am - 8pm</li>
@@ -104,7 +100,7 @@
                                     <li>Friday: 8am - 8pm</li>
                                     <li>Saturday: 8am - 8pm</li>
                                     <li>Sunday: 8am - 8pm</li>
-                                </ul>
+                                </ol>
                             </li>
                         </ul>
                         <p ></p>
@@ -113,6 +109,13 @@
                 </div>
             </div>
 
+            <div id="leaderboard-panel-wrapper">
+                <div id="leaderboard-panel">
+                    <span class="icon-cross" id="leaderboard-exit-button"></span>
+                    <ul id="leaderboard">
+                    </ul>
+                </div>
+            </div>
         </div><!-- Content -->
 <div id="map-canvas"/>
 </body>

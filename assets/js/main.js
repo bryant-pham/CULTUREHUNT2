@@ -57,4 +57,22 @@ $(function(){
 		}
 	});		
 
+	$('#leaderboard-li').click(function(){
+		if($('#leaderboard-panel-wrapper').css('display') == 'none'){
+			$('#leaderboard-panel-wrapper').animate({width: 'toggle'}, "slow");
+		}
+		else{
+			return
+		}
+	});
+
+	$('#leaderboard-exit-button').click(function(){
+		if($('#leaderboard-panel-wrapper').css('display') != 'none'){
+			$('#leaderboard-panel-wrapper').animate({width: 'toggle'}, "slow");
+		}
+		else{
+			return
+		}
+	});
+	
 });
