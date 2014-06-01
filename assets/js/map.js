@@ -66,10 +66,10 @@
 
           //Check In Validation Condition
           if (d<=400) {
-            alert("YOU CHECKED IN MANG");
+            alert("You earned " + score + " points!");
             addScore();
           } else {
-            alert("You are not close enough to check in.");
+            alert("Visit this location to checkin!");
           }
           
         }, function() {
