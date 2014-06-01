@@ -28,6 +28,9 @@ function passLatLong(jsonLat, jsonLong) {
 }
 
 $(function(){
+	
+	// Menu
+	// ================================================================
 	$('#menu-button-enter').click( 
 	    function(event){
 		    $("#menu").animate({width: 'toggle'}, "slow");
@@ -41,7 +44,9 @@ $(function(){
 	    }
 	);
 
-	// Pass position to check in function
+	
+	// Checkin & Location Panel 
+	// ================================================================
     $('#checkin-button').click(
     	function(event){ 
         checkIn(locLat, locLong);
@@ -57,6 +62,8 @@ $(function(){
 		}
 	});		
 
+	// Leaderboard
+	// ================================================================
 	$('#leaderboard-li').click(function(){
 		if($('#leaderboard-panel-wrapper').css('display') == 'none'){
 			$('#leaderboard-panel-wrapper').animate({width: 'toggle'}, "slow");
@@ -74,5 +81,48 @@ $(function(){
 			return
 		}
 	});
+
+	// Nearby-List
+	// ================================================================
+	$('#nearby-list-li').click(function(){
+		if($('#nearby-list-panel').css('display') == 'none'){
+			$('#nearby-list-panel').animate({width: 'toggle'}, "slow");
+			$('#nearby-list-panel').scrollTop();	
+		}
+		else{
+			return
+		}
+	});
+
+	$('#nearby-list-exit-button').click(function(){
+		if($('#nearby-list-panel').css('display') != 'none'){
+			$('#nearby-list-panel').animate({width: 'toggle'}, "slow");
+		}
+		else{
+			return
+		}
+	});
+
+	// About
+	// ================================================================
+	$('#about-li').click(function(){
+		if($('#about-panel-wrapper').css('display') == 'none'){
+			$('#about-panel-wrapper').animate({width: 'toggle'}, "slow");
+			$(window).scrollTop();	
+		}
+		else{
+			return
+		}
+	});
+
+	$('#about-exit-button').click(function(){
+		if($('#about-panel-wrapper').css('display') != 'none'){
+			$('#about-panel-wrapper').animate({width: 'toggle'}, "slow");
+		}
+		else{
+			return
+		}
+	});
+
 	
 });

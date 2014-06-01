@@ -56,7 +56,7 @@
                 <span class="icon-cross" id="menu-button-exit"></span>
                 <div id="menu-scoller">
                     <ul>
-                        <li>
+                         <li>
                             Search
                         </li>
                         <li>
@@ -65,11 +65,11 @@
                         <li id="leaderboard-li">
                             Leaderboard
                         </li>
-                        <li>
-                            History
+                        <li id="nearby-list-li">
+                            List-View
                         </li>
-                        <li>
-                            List
+                        <li id="about-li">
+                            About
                         </li>
                     </ul>
                 </div><!-- Menu scroller -->
@@ -80,38 +80,66 @@
                     <div id="checkin-button-wrapper"></div>
                     <span class="icon-checkmark" id="checkin-button"></span>
                     <span class="icon-cross" id="location-panel-button-exit"></span>
+
                     <div id="location-marked">
+                        <div id="location-image"></div>
                         <h1 id="location-name">Location Name</h1>
                         <ul>
-                            <li id="location-address">
-                                1 Google Drive, Mouton View CA
-                                782666
+                            <li >
+                                <span class="section-header">Address:</span> <br/><!-- Breakpoint for Rishi! -->
+                                <span id="location-address"></span>
                             </li>
-                            <li id="location-hours">
-                                <ol>
-                                    <li>Monday: 8am - 8pm</li>
-                                    <li>Tuesday: 8am - 8pm</li>
-                                    <li>Wednesday: 8am - 8pm</li>
-                                    <li>Thursday: 8am - 8pm</li>
-                                    <li>Friday: 8am - 8pm</li>
-                                    <li>Saturday: 8am - 8pm</li>
-                                    <li>Sunday: 8am - 8pm</li>
-                                </ol>
+                            <li >
+                                <span class="section-header">Store Hours:</span> <span id="location-hours"></span>
+                            </li>
+                            <li>
+                                <span class="section-header">Description: </span><br/>
+                                 <span id="location-description"></span>
                             </li>
                         </ul>
-                        <p ></p>
-                        <p ></p><br/><!-- Rishi's Breakpoint -->
-                    </div>
-                </div>
-            </div>
+                    </div><!-- Location Marked -->
+                </div><!-- Locaton Panel -->
+            </div><!-- Locaton Panel Wrapper-->
 
             <div id="leaderboard-panel-wrapper">
                 <div id="leaderboard-panel">
                     <span class="icon-cross" id="leaderboard-exit-button"></span>
                     <ul id="leaderboard">
                     </ul>
-                </div>
-            </div>
+                </div><!--learderboard-panel-->
+            </div><!--leaderboard-wrapper-->
+
+            <div id="nearby-list-panel-wrapper">
+                <div id="nearby-list-panel">
+                    <span class="icon-cross" id="nearby-list-exit-button"></span>
+                    <ul id="nearby-list">
+                    </ul>
+                </div><!--nearby-list-panel-->
+            </div><!--nearby-list-wrapper-->
+
+            <div id="about-panel-wrapper">
+                <div id="about-panel">
+                    <span class="icon-cross" id="about-exit-button"></span>
+                    <div id="about">
+                        <h3>Welcome to,</h3>
+                        <h1 id="app-title">CultureHunt!</h1>
+                        <p>
+                            We are still under construction, and have plans to enable lots of cool features!
+                        </p>
+                        <p>
+                            In the mean time, feel free to check out some of the cool cultural sites around Houston.
+                        </p>
+                        <p>
+                            How many cultural hotspots have you been to arround town?
+                        </p>
+                        <h3>How it Works</h3>
+                        <p>
+                            Click on different map locations to learn about awesome cultural spots around town (like the "Houston Is" mural, and the Menil Collection)! You can get their address, and check in here when you get there!
+                        </p>
+                    </div>
+                </div><!--about-panel-->
+            </div><!--about-wrapper-->
+
         </div><!-- Content -->
 <div id="map-canvas"/>
 </body>
