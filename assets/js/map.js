@@ -97,10 +97,10 @@
         google.maps.event.addListener(marker, 'click', function(){
           
             //GET JSON OBJECT OF MARKER HERE
-            var location = findTitleInJSON(marker);
+            findTitleInJSONAndSetSidebar(marker);
 
             if($('#location-panel-wrapper').css('display') == 'none'){
-              toggleLocationPanel(location);
+              toggleLocationPanel();
             }
             else{
               return
@@ -113,9 +113,12 @@
         var locationsJSON = $.getJSON('/assets/db/locations.json', function(json) {
             for(var i = 0; i < json.length; i++) {
                 if(json[i].locationname == marker.getTitle()) {
+
+                  // Set #location-panel items
                     $('#location-name').text(json[i].locationname);
                     $('#location-address').text(json[i].address);
                     $('#location-hours').text(json[i].hours);
+                    
                 }
             }
         });

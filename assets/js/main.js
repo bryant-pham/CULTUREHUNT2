@@ -36,11 +36,11 @@ $(function(){
 
 	$('#location-panel-button-exit').click(function(){
 		if($('#location-panel-wrapper').css('display') != 'none'){
-			toggleLocationPanel(location);
+			toggleLocationPanel();
 		}
 		else{
 			return
 		}
-	})
+	});		
 
 });
