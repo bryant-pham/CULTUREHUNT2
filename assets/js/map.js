@@ -12,9 +12,9 @@
         navigator.geolocation.getCurrentPosition(function(position) {
           var pos = new google.maps.LatLng(position.coords.latitude,
                                            position.coords.longitude);
-
+          var ctx = '<center><img src="http://lorempixel.com/50/50/cats/"><br>John Johnson<br><div><span>Points: </span><span id="points">' + score + '</span></div></center>';
           var infowindow = new google.maps.InfoWindow({
-            content: '<center><img src="http://lorempixel.com/50/50/cats/"><br>John Johnson<br>Points: 2391</center>'
+            content: ctx
           });
 
           var marker = new google.maps.Marker({
@@ -67,6 +67,7 @@
           //Check In Validation Condition
           if (d<=400) {
             alert("YOU CHECKED IN MANG");
+            addScore();
           } else {
             alert("You are not close enough to check in.");
           }
@@ -137,8 +138,6 @@
                     var locLat = json[i].latitude;
                     var locLong = json[i].longitude;
                     passLatLong(locLat, locLong);
-
-
                 }
             }
         });
