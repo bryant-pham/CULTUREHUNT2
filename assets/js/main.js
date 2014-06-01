@@ -17,12 +17,10 @@ function toggleLocationPanel() {
     	});
     	locationPanel.slideToggle( "slow" );
     }
-    
    //$('#location-name').text(location.locationname);
 }
 
 $(function(){
-
 	$('#menu-button-enter').click( 
 	    function(event){
 		    $("#menu").animate({width: 'toggle'}, "slow");
