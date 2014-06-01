@@ -150,15 +150,41 @@ textarea {
    }
 
    #checkin-button{
-    position: relative;
-    padding-right: 12%;
-   }
+    /* Position */
+    position: absolute;
+    float: right;
+    margin: 3%;
+    margin-right:20%;
+    right:0;
 
-   #checkin-button:before{
+    /* Font */
+    font-size: 4em;
+
+    /* Color */
+    color: rgb(137,89,77); /* sienna */
+
+    /* Border */
+    border: solid;
+    border-radius: 25%;
+
+    /* Cursor */
+    cursor: pointer;
+
+
+    /* Transitions */
+      -webkit-transition: color 0.1s ease-in-out;
+      -moz-transition: color 0.1s ease-in-out;
+      -o-transition: color 0.1s ease-in-out;
+      transition: color 0.1s ease-in-out;
    }
-#menu ul, #location-panel ul, #location-name{
-    list-style: none;
-}
+   #checkin-button:active {  
+        color: #f2f2f2;
+        font-size: 5em;  
+    }  
+
+    #menu ul, #location-panel ul, #location-name{
+        list-style: none;
+    }
    #menu ul, #location-panel ul, #location-name, #leaderboard-panel ul{
     /* List Style */
     padding-left: 0;
