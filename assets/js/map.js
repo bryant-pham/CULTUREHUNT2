@@ -1,5 +1,5 @@
     var map;
-    var locationsJSON = $.getJSON('db/locations.json')
+    //var locationsJSON = $.getJSON('/assets/db/locations.json')
 
     function initialize() {
       var mapOptions = {
@@ -53,21 +53,21 @@
 
     function addMarkerListener(marker) {
         google.maps.event.addListener(marker, 'click', function() {
-            //console.log(marker.getTitle());
-            findTitleInJSON(marker);
+            //GET JSON OBJECT OF MARKER HERE
+            //PASS JSON OBJECT AND UPDATE DIV
         });
     }
 
     function findTitleInJSON(marker) {
-        console.log(locationsJSON[0]);
-        for(var i = 0; i < locationsJSON.length; i++) {
-            console.log(marker.getTitle());
-            var obj = locationsJSON[i];
-            
-            if(obj.locationname == marker.getTitle())
-                console.log('TRUE');
-        }
-    }
+        var locationsJSON = $.getJSON('/assets/db/locations.json', function(json) {
+            for(var i = 0; i < json.length; i++) {
+                if(json[i].locationname == marker.getTitle()) {
+                    console.log('FOUND YA');
+                    return json[i];
+                }
+            }
+        });
+     }
 
     function handleNoGeolocation(errorFlag) {
       if (errorFlag) {
