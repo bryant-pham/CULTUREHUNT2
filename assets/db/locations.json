@@ -1,0 +1,234 @@
+[
+    {
+        "locationname": "Rothko Chapel",
+        "address": "3900 Yupon St, Houston, TX 77006",
+        "hours": "10:00 am - 6:00 pm",
+        "category": "Religious Site",
+        "latitude": 29.737821,
+        "longitude": -95.395742
+    },
+    {
+        "locationname": "Screwed Up Records & Tapes",
+        "address": "3538 W Fuqua St. Houston, TX 77045",
+        "hours": "9:00 am - 5:00 pm",
+        "category": "Music",
+        "latitude": 29.613935,
+        "longitude": -95.429772
+    },
+    {
+        "locationname": "Texas Guandi Temple",
+        "address": "2089 Milby St, Houston, TX 77003",
+        "hours": "n/a",
+        "category": "Religious Site",
+        "latitude": 29.734553,
+        "longitude": -95.345009
+    },
+    {
+        "locationname": "Shri Swaminarayan Mandir",
+        "address": "1150 Brand Lane, Stafford, TX 77477",
+        "hours": "7:30 am - 8:45 pm",
+        "category": "Religious Site",
+        "latitude": 29.6073,
+        "longitude": -95.578918
+    },
+    {
+        "locationname": "Sri Meenakshi Devasthanam",
+        "address": "17130 McLean Rd, Pearland, TX 77584",
+        "hours": "8:30 am - 8:30 pm",
+        "category": "Religious Site",
+        "latitude": 29.522744,
+        "longitude": -95.297627
+    },
+    {
+        "locationname": "Notsuoh",
+        "address": "314 Main St, Houston, TX 77002",
+        "hours": "6:00 pm - 2:00 am",
+        "category": "Music",
+        "latitude": 29.761861,
+        "longitude": -95.361458
+    },
+    {
+        "locationname": "Raindrop Turkish House",
+        "address": "9301 W Bellfort St, Houston, TX 77031",
+        "hours": "n/a",
+        "category": "Cultural Site",
+        "latitude": 29.654633,
+        "longitude": -95.546101
+    },
+    {
+        "locationname": "India House Houston",
+        "address": "8888 W Bellfort Ave, Houston, TX 77031",
+        "hours": "8:00 am - 4:00 pm",
+        "category": "Cultural Site",
+        "latitude": 29.656585,
+        "longitude": -95.532987
+    },
+    {
+        "locationname": "Adickes Sculpturworx Studio",
+        "address": "2500 Summer St. Houston, TX 77246",
+        "hours": "n/a",
+        "category": "Arts",
+        "latitude": 29.773386,
+        "longitude": -95.384609
+    },
+    {
+        "locationname": "Houston Zen Center",
+        "address": "1605 Heights Blvd, Houston, TX 77008",
+        "hours": "n/a",
+        "category": "Religious Site",
+        "latitude": 29.800366,
+        "longitude": -95.398354
+    },
+    {
+        "locationname": "The Jung Center",
+        "address": "5200 Montrose Blvd, Houston, TX 77006",
+        "hours": "9:00 am - 5:00 am",
+        "category": "Religious Site",
+        "latitude": 29.726718,
+        "longitude": -95.391411
+    },
+    {
+        "locationname": "The Menil Collection",
+        "address": "1533 Sul Ross St, Houston, TX 77006",
+        "hours": "10:00 am - 7:00 pm",
+        "category": "Arts",
+        "latitude": 29.737185,
+        "longitude": -95.397685
+    },
+    {
+        "locationname": "Bayou Bend Collection and Gardens",
+        "address": "6003 Memorial Dr, Houston, TX 77007",
+        "hours": "9:00 am - 5:00 pm",
+        "category": "Arts",
+        "latitude": 29.760527,
+        "longitude": -95.42178
+    },
+    {
+        "locationname": "Houston Holocaust Museum",
+        "address": "5401 Caroline St, Houston, TX 77004",
+        "hours": "12:00 pm - 5:00 pm",
+        "category": "Cultural Site",
+        "latitude": 29.724983,
+        "longitude": -95.385663
+    },
+    {
+        "locationname": "Museum of Fine Arts",
+        "address": "1001 Bissonnet St, Houston, TX 77005",
+        "hours": "10:00 am - 7:00 pm",
+        "category": "Arts",
+        "latitude": 29.725692,
+        "longitude": -95.390379
+    },
+    {
+        "locationname": "Miller Outdoor Theater",
+        "address": "6000 Hermann Park Dr, Houston, TX 77030",
+        "hours": "11:00 am - 11:00 pm",
+        "category": "Music",
+        "latitude": 29.719181,
+        "longitude": -95.388668
+    },
+    {
+        "locationname": "War'Hous Gallery",
+        "address": "4715 Main St. Houston, TX 77002",
+        "hours": "n/a",
+        "category": "Arts",
+        "latitude": 29.731491,
+        "longitude": -95.384784
+    },
+    {
+        "locationname": "Houston Is mural",
+        "address": "420 Travis St. Houston, TX 77002",
+        "hours": "n/a",
+        "category": "Arts",
+        "latitude": 29.761602,
+        "longitude": -95.362571
+    },
+    {
+        "locationname": "The Asia Society",
+        "address": "1370 Southmore Blvd, Houston, TX 77004",
+        "hours": "11:00 am - 6:00 pm",
+        "category": "Cultural Site",
+        "latitude": 29.726365,
+        "longitude": -95.384652
+    },
+    {
+        "locationname": "Chapel of St. Basil",
+        "address": "1100 West Alabama Houston, TX 77006",
+        "hours": "n/a",
+        "category": "Religious Site",
+        "latitude": 29.738776,
+        "longitude": -95.39253
+    },
+    {
+        "locationname": "Co-Cathedral of the Sacred Heart",
+        "address": "1701 San Jacinto St, Houston, TX 77002",
+        "hours": "n/a",
+        "category": "Religious Site",
+        "latitude": 29.750111,
+        "longitude": -95.36745
+    },
+    {
+        "locationname": "Houston Public Library at Julia Ideson Building",
+        "address": "500 McKinney Street Houston, TX 77002",
+        "hours": "n/a",
+        "category": "Cultural Site",
+        "latitude": 29.759431,
+        "longitude": -95.369953
+    },
+    {
+        "locationname": "Sam Houston Park",
+        "address": "1000 Bagby St. Houston, TX 77002",
+        "hours": "n/a",
+        "category": "Park",
+        "latitude": 29.760129,
+        "longitude": -95.370571
+    },
+    {
+        "locationname": "Fitzgerald's",
+        "address": "2706 White Oak Dr, Houston, TX 77007",
+        "hours": "7:00 am - 2:00 am",
+        "category": "Music",
+        "latitude": 29.781814,
+        "longitude": -95.388071
+    },
+    {
+        "locationname": "Number's Night Club",
+        "address": "300 Westheimer Rd, Houston, TX 77006",
+        "hours": "n/a",
+        "category": "Music",
+        "latitude": 29.744746,
+        "longitude": -95.384943
+    },
+    {
+        "locationname": "House of Pies",
+        "address": "3112 Kirby Dr, Houston, TX 77098",
+        "hours": "24/7",
+        "category": "Food",
+        "latitude": 29.737075,
+        "longitude": -95.419152
+    },
+    {
+        "locationname": "Old Town Spring",
+        "address": "403 Main St, Spring, TX 77373",
+        "hours": "n/a",
+        "category": "Food/Music/Art",
+        "latitude": 30.07902,
+        "longitude": -95.421159
+    },
+    {
+        "locationname": "Houston Technology Center",
+        "address": "410 Pierce Street Houston, TX 77002",
+        "hours": "n/a",
+        "category": "Arts",
+        "latitude": 29.752067,
+        "longitude": -95.375678
+    },
+    {
+        "locationname": "Houston Museum of African American Culture",
+        "address": "4807 Caroline St, Houston, TX 77004",
+        "hours": "n/a",
+        "category": "Arts",
+        "latitude": 29.729597,
+        "longitude": -95.382338
+    }
+]
