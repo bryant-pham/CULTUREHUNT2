@@ -1,3 +1,5 @@
+var locLat;
+var locLong;
 
 function toggleLocationPanel() {
     var locationPanel = $('#location-panel-wrapper');
@@ -20,6 +22,11 @@ function toggleLocationPanel() {
    //$('#location-name').text(location.locationname);
 }
 
+function passLatLong(jsonLat, jsonLong) {
+	locLat = jsonLat;
+	locLong = jsonLong;
+}
+
 $(function(){
 	$('#menu-button-enter').click( 
 	    function(event){
@@ -34,6 +41,13 @@ $(function(){
 	    }
 	);
 
+	// Pass position to check in function
+    $('#checkin-button').click(
+    	function(event){ 
+        checkIn(locLat, locLong);
+    	}
+    );
+
 	$('#location-panel-button-exit').click(function(){
 		if($('#location-panel-wrapper').css('display') != 'none'){
 			toggleLocationPanel();
@@ -43,4 +57,22 @@ $(function(){
 		}
 	});		
 
+	$('#leaderboard-li').click(function(){
+		if($('#leaderboard-panel-wrapper').css('display') == 'none'){
+			$('#leaderboard-panel-wrapper').animate({width: 'toggle'}, "slow");
+		}
+		else{
+			return
+		}
+	});
+
+	$('#leaderboard-exit-button').click(function(){
+		if($('#leaderboard-panel-wrapper').css('display') != 'none'){
+			$('#leaderboard-panel-wrapper').animate({width: 'toggle'}, "slow");
+		}
+		else{
+			return
+		}
+	});
+	
 });
