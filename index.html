@@ -22,16 +22,6 @@
     <link rel="stylesheet" href="http://i.icomoon.io/public/temp/b2ada68417/UntitledProject1/style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-    <script>
-    $(document).ready(function() {
-        $.getJSON('/assets/db/locations.json', function(json) {
-            for(var i = 0; i < json.length; i++) {
-                var obj = json[i];
-                setLocalMarkers(obj.locationname, obj.latitude, obj.longitude)
-            }
-        });
-    });
-    </script>
   </head>   
 <body>
 <!-- Main Home Page -->

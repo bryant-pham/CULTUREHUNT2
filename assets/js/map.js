@@ -25,8 +25,10 @@
             title: 'CURRENT LOCATION'
           });
 
+          addLocationMarkers();
+
           google.maps.event.addListener(marker, 'click', function() {
-          infowindow.open(map,marker);
+            infowindow.open(map,marker);
           }); 
 
           map.setCenter(pos);
@@ -81,15 +83,22 @@
 
     //creates marker using name, lats, and longs
     function setLocalMarkers(markerName, markerLat, markerLong) {
-        console.log(markerLat + ' ' + markerLong);
         var markerLoc = new google.maps.Marker({
             position: new google.maps.LatLng(markerLat, markerLong),
             map: map,
             title: markerName,
             zIndex: 10
         });
-        //console.log('SETTING MARKERS');
         addMarkerListener(markerLoc);
+    }
+
+    function addLocationMarkers() {
+        $.getJSON('/assets/db/locations.json', function(json) {
+            for(var i = 0; i < json.length; i++) {
+                var obj = json[i];
+                setLocalMarkers(obj.locationname, obj.latitude, obj.longitude)
+            }
+        });
     }
 
     var jsonReturned;
@@ -98,23 +107,26 @@
           
             //GET JSON OBJECT OF MARKER HERE
             findTitleInJSONAndSetSidebar(marker);
-
+            
             if($('#location-panel-wrapper').css('display') == 'none'){
               toggleLocationPanel();
             }
             else{
               return
             }
+            console.log(jsonReturned);
 
         });
     }
 
     function findTitleInJSONAndSetSidebar(marker) {
-        var locationsJSON = $.getJSON('/assets/db/locations.json', function(json) {
+        var derp = $.getJSON('/assets/db/locations.json');
+        console.log(derp);
+        $.getJSON('/assets/db/locations.json', function(json) {
             for(var i = 0; i < json.length; i++) {
                 if(json[i].locationname == marker.getTitle()) {
-
-                  // Set #location-panel items
+                    jsonReturned = json[i];
+                    // Set #location-panel items
                     $('#location-name').text(json[i].locationname);
                     $('#location-address').text(json[i].address);
                     $('#location-hours').text(json[i].hours);
