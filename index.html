@@ -62,7 +62,17 @@
             position: new google.maps.LatLng(markerLat, markerLong),
             map: map,
             title: markerName
+
         });
+        var infowindow = new google.maps.InfoWindow({
+            //map: map,
+            //position: pos,
+            content: '<center><img src="http://lorempixel.com/50/50/cats/"><br>'+ markerName +'<br>Points: 2391<br><a href="">Check In!</a></center>'
+
+        });
+        google.maps.event.addListener(markerLoc, 'click', function() {
+          infowindow.open(map,markerLoc);
+          });
     }
 
     function handleNoGeolocation(errorFlag) {
