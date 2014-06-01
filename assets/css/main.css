@@ -180,12 +180,14 @@ textarea {
     #location-panel-wrapper {
         z-index: 4;
         position: absolute;
-        display: block;
+        display: none;
         width: 30%;
         height: 100%;
         left: 0;
         top:0;
         bottom:0;
+        overflow-y:hidden;
+
     }
     #location-panel{
         background-color: rgb(230,223,206); 

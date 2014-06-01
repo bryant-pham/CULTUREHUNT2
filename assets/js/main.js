@@ -1,6 +1,6 @@
 
 function toggleLocationPanel() {
-    $('#location-panel').animate({width: 'toggle'}, "slow");
+    $('#location-panel-wrapper').animate({width: 'toggle'}, "slow");
 }
 
 $(function(){
