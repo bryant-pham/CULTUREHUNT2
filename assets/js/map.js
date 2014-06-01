@@ -55,6 +55,7 @@
         google.maps.event.addListener(marker, 'click', function() {
             //console.log(marker.getTitle());
             findTitleInJSON(marker);
+            toggleLocationPanel();
         });
     }
 
