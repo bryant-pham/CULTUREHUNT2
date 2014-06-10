@@ -22,6 +22,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://i.icomoon.io/public/temp/b2ada68417/UntitledProject1/style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/fonts/font-awesome/css/font-awesome.min.css">
 
 </head>   
     <script>
@@ -59,21 +60,46 @@
   </head>
 
 <body>
-<!-- Main Home Page -->
+
+    <div id="content-intro">
+        <h2>Welcome to,</h2>
+        <h1>Culture Hunt</h1>
+        <p>
+            The premise of this site is to make a game out of exploring cities and the culture that makes them unique. 
+        </p>
+        <p>
+            This site is currently in development, but feel free to check our Houston locations that have been put in place to demonstrate the site's functionality.
+        </p>
+        <p>
+            Please, refer to the about section, located in the menu for more information.
+        </p>
+        <p>
+            If you would like to contribute the project please contact Devan at huapayadevan@gmail.com
+        </p>
+        <p class="warning">
+            In order for game to work, please, share your location.
+        </p>
+
+        <p id="continue-to-site-button" on-click="continue()">
+            Continue to site <span class="fa fa-arrow-right"></span>
+        </p>
+    </div>
+
+        <!-- Main Home Page -->
         <div id="content-homepage">
             <div id="menu-button-wrapper">
-                <span class="icon-list" id="menu-button-enter"></span>
+                <span class="button fa fa-navicon" id="menu-button-enter"></span>
             </div><!-- Menu Button -->
 
             <div id="menu">
 
-                <span class="icon-cross" id="menu-button-exit"></span>
+                <span class="button fa fa-times" id="menu-button-exit"></span>
                 <div id="menu-scoller">
                     <ul>
-                         <li>
+                         <li class="disabled-link">
                             Search
                         </li>
-                        <li>
+                        <li class="disabled-link">
                             Account
                         </li>
                         <li id="leaderboard-li">
@@ -92,11 +118,10 @@
             <div id="location-panel-wrapper">
                 <div id="location-panel">
                     <div id="checkin-button-wrapper"></div>
-                    <span class="icon-checkmark" id="checkin-button"></span>
-                    <span class="icon-cross" id="location-panel-button-exit"></span>
+                    <span class="button fa fa-check" id="checkin-button"></span>
+                    <span class="button fa fa-times" id="location-panel-button-exit"></span>
 
                     <div id="location-marked">
-                        <div id="location-image"></div>
                         <h1 id="location-name">Location Name</h1>
                         <ul>
                             <li >
@@ -109,15 +134,23 @@
                             <li>
                                 <span class="section-header">Description: </span><br/>
                                  <span id="location-description"></span>
+
                             </li>
+                            <li>
+                                </li>
                         </ul>
+                                <div id="image-wrapper-wrapper">
+                                <div id="location-image-wrapper">
+                                    <!-- <img id="location-image"></img> -->
+                                </div>
+                            </div>
                     </div><!-- Location Marked -->
                 </div><!-- Locaton Panel -->
             </div><!-- Locaton Panel Wrapper-->
 
             <div id="leaderboard-panel-wrapper">
                 <div id="leaderboard-panel">
-                    <span class="icon-cross" id="leaderboard-exit-button"></span>
+                    <span class="button fa fa-times" id="leaderboard-exit-button"></span>
                     <ul id="leaderboard">
                     </ul>
                 </div><!--learderboard-panel-->
@@ -125,7 +158,7 @@
 
             <div id="nearby-list-panel-wrapper">
                 <div id="nearby-list-panel">
-                    <span class="icon-cross" id="nearby-list-exit-button"></span>
+                    <span class="button fa fa-times" id="nearby-list-exit-button"></span>
                     <ul id="nearby-list">
                     </ul>
                 </div><!--nearby-list-panel-->
@@ -133,7 +166,9 @@
 
             <div id="about-panel-wrapper">
                 <div id="about-panel">
-                    <span class="icon-cross" id="about-exit-button"></span>
+                    <div class="button-wrapper">
+                    <span class="button fa fa-times" id="about-exit-button"></span>
+                </div> <!-- button-wrapper -->
                     <div id="about">
                         <h3>Welcome to,</h3>
                         <h1 id="app-title">CultureHunt!</h1>

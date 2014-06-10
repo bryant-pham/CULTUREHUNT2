@@ -136,6 +136,8 @@
                     $('#location-address').text(json[i].address);
                     $('#location-hours').text(json[i].hours);
                     $('#location-description').text(json[i]["description"]);
+                    $('#location-image-wrapper').css("background-image","url('" + json[i]["image"] + "')");
+                    //$('#location-image').attr("src",json[i]["image"]  );
                     var locLat = json[i].latitude;
                     var locLong = json[i].longitude;
                     passLatLong(locLat, locLong);

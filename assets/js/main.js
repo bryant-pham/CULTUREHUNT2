@@ -124,5 +124,13 @@ $(function(){
 		}
 	});
 
-	
+	// Continue to Game Button
+	// ================================================================
+	$('#continue-to-site-button').click(function(){
+		$('#content-intro').animate({'padding-left': '0%', 'opacity': '0' }, 250, 
+			function(){
+				$(this).css({'display':'none'});
+			});
+	});
+
 });

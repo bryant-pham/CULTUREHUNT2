@@ -1,10 +1,24 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/* ==========================================================================
+   Font Import
+   ========================================================================== */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
+@font-face {
+  font-family: Entypo;
+  src: local('☺'),
+         url(/fonts/Entypo.woff) format('woff'), url(/fonts/Entypo.ttf) format('truetype');
+
+  src: url(/fonts/Entypo.eot);
+    /*"Entypo pictograms by Daniel Bruce — www.entypo.com"*/
+}
+
+/* Icon Fonts */
+.icon-checkmark,.icon-cross,.icon-list{
+    font-family: Entypo;
+}
+.icon-checkmark:before{content:'\2713';}
+.icon-cross:before{content: '\274C';}
+.icon-list:before{content: '\2630';}
+
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -82,6 +96,57 @@ textarea {
     resize: vertical;
 }
     
+   /* Intro Panel
+   ========================================================================== */
+  #content-intro{
+    /* Layout */
+    position: fixed;
+    z-index: 11;
+    margin: 0; padding: 0;
+    height: 100%; width: 100%;
+
+    /* Color */
+    background: cadetblue;
+    color: white;
+
+    /* Padding */
+    padding: 10%;
+  }
+
+  #continue-to-site-button{
+
+    /* border */
+    border: 1px solid white;
+
+    /* Padding */
+    padding: 1%;
+
+    /* Width */
+    width: 10%;
+
+    /* Text */
+    text-align: center;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Transition */
+    -webkit-transition: color 0.25s ease-in-out,  border 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out,  border 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out,  border 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out,  border 0.25s ease-in-out;
+  }
+  .warning{
+    /* Font */
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  #continue-to-site-button:hover{
+    /* Color */
+    color: cyan;
+    border-color:cyan;
+
+  }
   /* About
    ========================================================================== */
    #welcome-to{
@@ -147,6 +212,10 @@ textarea {
    }
 
    #menu-button-enter{
+
+    /* Layout */
+    padding: 20%;
+
     /* Font */
     font-size: 4em;
 
@@ -171,7 +240,6 @@ textarea {
 
    #menu-button-exit, #location-panel-button-exit, #checkin-button, #leaderboard-exit-button, #nearby-list-exit-button, #about-exit-button{
     /* Position */
-    position: absolute;
     float: right;
     margin: 3%;
     right:0;
@@ -196,6 +264,15 @@ textarea {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+   }
+
+   .button-wrapper{
+
+    /* Layout */
+    position: relative;
+    padding: 2%;
+    clear:both;
+
    }
 
    #checkin-button{
@@ -256,9 +333,9 @@ textarea {
     cursor: pointer;
    }
    /* Disable First and Second Child */
-    #menu li:first-child, #menu li:nth-child(2) {
+   .disabled-link {
     /* Color */
-    color: rgba(52,142,202,0.5); /* cornflowerblue */
+    color: rgba(52,142,202,0.202); /* cornflowerblue */
 
     /* Cursor */
     cursor: default;
@@ -270,6 +347,36 @@ textarea {
 
    /* Location Panel
    ========================================================================== */
+   #location-panel{
+    padding-bottom: 40%;
+   }
+   #location-image-wrapper{
+    width: 100%;
+    height: 25%;
+    margin: 0;
+    bottom: 0;
+    /*border-radius: 50%;*/
+    display: block;
+    margin:auto;
+    position: absolute;
+
+    /* Background */
+    /*background-image:url(http://houstontech.org/media/cached/photos/1121/640x640/constrain/90/Houston-Technology-Center-Oct-2011-Sponsor-Appreciation-117-f8352.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-color: #555;
+    background-repeat: no-repeat;
+
+
+
+   }
+   #image-wrapper-wrapper{
+
+   }
+
+    #location-image{
+        position: absolute;
+    }
 
     #location-panel-wrapper {
         z-index: 4;
@@ -402,6 +509,9 @@ textarea {
     #menu, #leaderboard-panel-wrapper, #about-panel-wrapper{
         right: 0;
         width: 40%;
+    }
+    #leaderboard-panel{
+        width: 100%;
     }
     
 }
